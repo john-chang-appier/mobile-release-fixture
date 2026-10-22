@@ -16,7 +16,9 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-    uses: plaxieappier/mobile-release-workflows/.github/workflows/prepare-release.yml@v1
+    uses: john-chang-appier/mobile-release-workflows/.github/workflows/prepare-release.yml@main
     with:
       version: ${{ inputs.version }}
       dry-run: ${{ inputs.dry-run }}
+      central-repo: john-chang-appier/mobile-release-workflows
+      central-ref: main
