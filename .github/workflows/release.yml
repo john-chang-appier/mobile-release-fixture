@@ -1,0 +1,26 @@
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel:
+        description: internal | public
+        type: choice
+        options: [public, internal]
+        default: public
+      dry-run:
+        description: Skip anything irreversible
+        type: boolean
+        default: true
+
+jobs:
+  release:
+    permissions:
+      contents: read
+    uses: john-chang-appier/mobile-release-workflows/.github/workflows/release.yml@main
+    with:
+      channel: ${{ inputs.channel }}
+      dry-run: ${{ inputs.dry-run }}
+      central-repo: john-chang-appier/mobile-release-workflows
+      central-ref: main
+    secrets: inherit
