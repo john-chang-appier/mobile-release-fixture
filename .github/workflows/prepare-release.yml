@@ -14,11 +14,11 @@ on:
 jobs:
   prepare:
     permissions:
-      contents: write
-      pull-requests: write
+      contents: read
     uses: john-chang-appier/mobile-release-workflows/.github/workflows/prepare-release.yml@main
     with:
       version: ${{ inputs.version }}
       dry-run: ${{ inputs.dry-run }}
       central-repo: john-chang-appier/mobile-release-workflows
       central-ref: main
+    secrets: inherit
