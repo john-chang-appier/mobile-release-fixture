@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plaxieappier/mobile-release-fixture.git"
+    "url": "git+https://github.com/john-chang-appier/mobile-release-fixture.git"
   },
   "scripts": {
     "test": "node -e \"console.log('ok')\""
