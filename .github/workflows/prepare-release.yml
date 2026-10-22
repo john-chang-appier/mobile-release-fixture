@@ -4,8 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Stable version to prepare, X.Y.Z
+        description: X.Y.Z (stable) or X.Y.Z-rc.N (RC)
         required: true
+      base:
+        description: Cut a new branch from develop, or from the latest stable tag for a hotfix
+        type: choice
+        options: [develop, hotfix]
+        default: develop
       dry-run:
         description: Print the plan without pushing or opening a PR
         type: boolean
@@ -18,7 +23,9 @@ jobs:
     uses: john-chang-appier/mobile-release-workflows/.github/workflows/prepare-release.yml@main
     with:
       version: ${{ inputs.version }}
+      base: ${{ inputs.base }}
       dry-run: ${{ inputs.dry-run }}
+      release-dry-run: true  # fixture: never publish for real
       central-repo: john-chang-appier/mobile-release-workflows
       central-ref: main
     secrets: inherit

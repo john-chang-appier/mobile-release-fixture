@@ -13,4 +13,5 @@ jobs:
     with:
       central-repo: john-chang-appier/mobile-release-workflows
       central-ref: main
+      release-dry-run: true  # fixture: never publish for real
     secrets: inherit
