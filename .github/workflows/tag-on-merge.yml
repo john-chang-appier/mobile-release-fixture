@@ -1,0 +1,16 @@
+name: tag-on-merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [master]
+
+jobs:
+  tag:
+    permissions:
+      contents: read
+    uses: john-chang-appier/mobile-release-workflows/.github/workflows/tag-on-merge.yml@main
+    with:
+      central-repo: john-chang-appier/mobile-release-workflows
+      central-ref: main
+    secrets: inherit
