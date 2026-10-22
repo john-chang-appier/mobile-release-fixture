@@ -1,0 +1,12 @@
+{
+  "name": "@plaxieappier/release-fixture-rn",
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plaxieappier/mobile-release-fixture.git"
+  },
+  "scripts": {
+    "test": "node -e \"console.log('ok')\""
+  }
+}
