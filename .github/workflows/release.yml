@@ -17,6 +17,11 @@ jobs:
   release:
     permissions:
       contents: read
+      id-token: write
+      packages: write
+    concurrency:
+      group: release-${{ github.repository }}
+      cancel-in-progress: false
     uses: john-chang-appier/mobile-release-workflows/.github/workflows/release.yml@main
     with:
       channel: ${{ inputs.channel }}

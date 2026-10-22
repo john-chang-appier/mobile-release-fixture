@@ -2,3 +2,6 @@ platform: react-native
 channels: [internal, public]
 version:
   primary: {file: package.json, path: .version}
+native-deps:
+  # Stands in for a native SDK pin: left-pad's latest tag is newer, so every release warns.
+  - {name: left-pad, repo: stevemao/left-pad, file: package.json, path: .devDependencies.left-pad}

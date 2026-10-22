@@ -1,10 +1,13 @@
 {
   "name": "@plaxieappier/release-fixture-rn",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/plaxieappier/mobile-release-fixture.git"
+    "url": "git+https://github.com/john-chang-appier/mobile-release-fixture.git"
+  },
+  "devDependencies": {
+    "left-pad": "1.1.0"
   },
   "scripts": {
     "test": "node -e \"console.log('ok')\""
