@@ -1,4 +1,11 @@
 
+## [0.4.2] - 2026-10-23
+
+### Features
+
+- Add farewell ([MT-9607](https://appier.atlassian.net/browse/MT-9607))
+
+
 ## [0.4.1] - 2026-10-23
 
 ### Bug Fixes
