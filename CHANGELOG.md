@@ -1,4 +1,11 @@
 
+## [0.4.1] - 2026-10-23
+
+### Bug Fixes
+
+- Greet world when the name is blank ([MT-9607](https://appier.atlassian.net/browse/MT-9607))
+
+
 ## [0.4.0] - 2026-10-23
 
 ### Features
