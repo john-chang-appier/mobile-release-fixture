@@ -1,4 +1,23 @@
 
+## [0.4.0] - 2026-10-23
+
+### Features
+
+- Unreleased work on develop (e2e)
+- Unreleased work on develop (e2e)
+- Unreleased work on develop (e2e)
+- Unreleased work on develop (e2e)
+
+### Bug Fixes
+
+- Greet by name, defaulting to world ([MT-9607](https://appier.atlassian.net/browse/MT-9607))
+
+### E2e
+
+- Merge master into develop
+- Merge master into develop
+
+
 ## [0.79803.0] - 2026-10-23
 
 ### Features
