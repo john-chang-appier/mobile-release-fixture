@@ -1,4 +1,11 @@
 
+## [0.4.3] - 2026-10-23
+
+### Features
+
+- Add greetAll for a list of names ([MT-9607](https://appier.atlassian.net/browse/MT-9607))
+
+
 ## [0.4.1] - 2026-10-23
 
 ### Bug Fixes
