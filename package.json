@@ -1,6 +1,6 @@
 {
   "name": "@plaxieappier/release-fixture-rn",
-  "version": "0.4.2-rc.1",
+  "version": "0.4.2-rc.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/john-chang-appier/mobile-release-fixture.git"
